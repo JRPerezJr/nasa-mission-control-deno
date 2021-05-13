@@ -1,7 +1,4 @@
-import * as log from 'https://deno.land/std@0.96.0/log/mod.ts';
-import { join } from 'https://deno.land/std/path/mod.ts';
-import { BufReader } from 'https://deno.land/std/io/bufio.ts';
-import { parse } from 'https://deno.land/std/encoding/csv.ts';
+import { BufReader, join, log, parse } from '../deps.ts';
 import { findHabitablePlanets } from './habitable_planets.ts';
 import { getPlanetData } from './habitable_planet_data.ts';
 

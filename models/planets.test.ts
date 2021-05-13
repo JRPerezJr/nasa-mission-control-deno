@@ -1,7 +1,4 @@
-import {
-  assert,
-  assertEquals,
-} from 'https://deno.land/std@0.96.0/testing/asserts.ts';
+import { assert, assertEquals } from '../test_deps.ts';
 
 import { findHabitablePlanets } from './habitable_planets.ts';
 

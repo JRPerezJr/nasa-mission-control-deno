@@ -1,4 +1,4 @@
-import * as _ from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
+import * as _ from '../deps.ts';
 
 export function getPlanetData(planets: any) {
   const planetData = planets.map((planet: any) => {
