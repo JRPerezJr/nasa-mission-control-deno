@@ -1,4 +1,4 @@
-let launches = [];
+let launches;
 
 const numberHeading = 'No.'.padStart(5);
 const dateHeading = 'Date'.padEnd(15);
@@ -14,11 +14,6 @@ function initValues() {
   launchDaySelector.setAttribute('value', today);
 }
 
-function loadLaunches() {
-  // TODO: Once API is ready.
-  // Load launches and sort by flight number.
-}
-
 function loadPlanets() {
   return fetch('/v1/planets')
     .then(planetsResponse => planetsResponse.json())
@@ -29,6 +24,16 @@ function loadPlanets() {
         planetSelector.innerHTML += `<option value="${planet.kepler_name}">${planet.kepler_name}</option>`;
       });
     });
+}
+
+function loadLaunches() {
+  return fetch('/v1/launches').then(launchesResponse =>
+    launchesResponse.json().then(fetchedLaunches => {
+      launches = fetchedLaunches.sort((a, b) => {
+        return a.flightNumber < b.flightNumber;
+      });
+    })
+  );
 }
 
 function abortLaunch() {
