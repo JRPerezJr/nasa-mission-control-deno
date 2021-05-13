@@ -14,5 +14,9 @@ passwords.txt
 **/*.class
 
 # Ignoring test files and test_deps
-*.test.test
+*.test.ts
 test_deps.ts
+
+# Ignoring prettier files
+.prettierignore
+.prettierrc
