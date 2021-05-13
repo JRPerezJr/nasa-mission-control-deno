@@ -30,7 +30,7 @@ function loadLaunches() {
   return fetch('/v1/launches').then(launchesResponse =>
     launchesResponse.json().then(fetchedLaunches => {
       launches = fetchedLaunches.sort((a, b) => {
-        return a.flightNumber < b.flightNumber;
+        return a.flightNumber > b.flightNumber;
       });
     })
   );
