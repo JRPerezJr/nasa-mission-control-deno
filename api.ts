@@ -14,7 +14,7 @@ router.get('/', (ctx) => {
                      Mission Control API`;
 });
 
-router.get('/planets', (ctx) => {
+router.get('/v1/planets', (ctx) => {
   ctx.response.body = planets.getAllPlanets();
 });
 
