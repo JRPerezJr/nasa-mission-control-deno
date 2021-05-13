@@ -4,8 +4,12 @@ import { parse } from 'https://deno.land/std/encoding/csv.ts';
 import { findHabitablePlanets } from './habitable_planets.ts';
 import { getPlanetData } from './habitable_planet_data.ts';
 
+type Planet = Record<string, string>;
+
+let planets: Array<Planet>;
+
 async function loadPlanetsData() {
-  const path = join('.', 'kepler_exoplanets_data.csv');
+  const path = join('data', 'kepler_exoplanets_data.csv');
 
   const file = await Deno.open(path);
   const bufReader = new BufReader(file);
@@ -19,9 +23,10 @@ async function loadPlanetsData() {
 
   return getPlanetData(habitablePlanets);
 }
-const newEarths = await loadPlanetsData();
+planets = await loadPlanetsData();
 
-for (const planet of newEarths) {
-  console.log(planet);
+console.log(`${planets.length} habitable planets found !`);
+
+export function getAllPlanets() {
+  return planets;
 }
-console.log(`${newEarths.length} habitable planets found !`);
