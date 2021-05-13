@@ -15,6 +15,7 @@ router.get('/', (ctx) => {
 });
 
 router.get('/v1/planets', (ctx) => {
+  // ctx.throw(501, 'Sorry no planets available!');
   ctx.response.body = planets.getAllPlanets();
 });
 
