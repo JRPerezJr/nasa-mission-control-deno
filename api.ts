@@ -34,6 +34,12 @@ router.get('/v1/launch/:id', (ctx) => {
     ctx.throw(400, 'No launch found with that id');
   }
 });
+router.delete('/v1/launch/:id', (ctx) => {
+  if (ctx.params?.id) {
+    const result = launches.removeLaunch(Number(ctx.params.id));
+    ctx.response.body = { success: result };
+  }
+});
 
 router.post('/v1/launches', async (ctx) => {
   const body = await ctx.request.body().value;
