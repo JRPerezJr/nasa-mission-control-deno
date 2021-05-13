@@ -6,6 +6,6 @@ COPY . .
 
 USER deno
 
-CMD [ "run",  "--allow-net", "--alow-read", "src/mod.ts"]
+CMD [ "run",  "--allow-net", "--allow-read", "src/mod.ts"]
 
 EXPOSE 8000
