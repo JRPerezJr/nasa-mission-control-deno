@@ -20,16 +20,15 @@ function loadLaunches() {
 }
 
 function loadPlanets() {
-  // TODO: Once API is ready.
-  const planets = [
-    { kepler_name: 'TRD-1203' },
-    { kepler_name: 'ZXT-2034' },
-    { kepler_name: 'STX-2394' },
-  ];
-  const planetSelector = document.getElementById('planets-selector');
-  planets.forEach(planet => {
-    planetSelector.innerHTML += `<option value="${planet.kepler_name}">${planet.kepler_name}</option>`;
-  });
+  return fetch('/v1/planets')
+    .then(planetsResponse => planetsResponse.json())
+    .then(planets => {
+      const planetSelector = document.getElementById('planets-selector');
+
+      planets.forEach(planet => {
+        planetSelector.innerHTML += `<option value="${planet.kepler_name}">${planet.kepler_name}</option>`;
+      });
+    });
 }
 
 function abortLaunch() {
