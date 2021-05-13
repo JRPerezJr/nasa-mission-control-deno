@@ -54,3 +54,10 @@ log.info(`Downloaded data for ${launches.size} Space X launches.`);
 export function getAll() {
   return Array.from(launches.values());
 }
+
+export function getLaunch(id: number) {
+  if (launches.has(id)) {
+    return launches.get(id);
+  }
+  return null;
+}
