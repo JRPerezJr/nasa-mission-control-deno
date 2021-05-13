@@ -1,4 +1,4 @@
-import * as _ from '../deps.ts';
+import { _ } from '../deps.ts';
 
 export function getPlanetData(planets: any) {
   const planetData = planets.map((planet: any) => {

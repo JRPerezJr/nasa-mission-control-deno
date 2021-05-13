@@ -10,5 +10,5 @@ export {
   send,
   Router,
 } from 'https://deno.land/x/oak@v7.4.1/mod.ts';
-export { flatMap } from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
+export { flatMap, pick } from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
 export * as _ from 'https://deno.land/x/lodash@4.17.15-es/lodash.js';
