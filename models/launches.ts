@@ -49,5 +49,8 @@ export async function downloadLaunchData() {
 }
 
 await downloadLaunchData();
-log.info(JSON.stringify(import.meta));
 log.info(`Downloaded data for ${launches.size} Space X launches.`);
+
+export function getAll() {
+  return Array.from(launches.values());
+}
