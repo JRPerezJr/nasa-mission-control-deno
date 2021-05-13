@@ -1,6 +1,4 @@
-interface Planet {
-  [key: string]: string;
-}
+type Planet = Record<string, string>;
 
 export function findHabitablePlanets(result: any) {
   const planets = (result as Array<Planet>).filter((planet) => {
