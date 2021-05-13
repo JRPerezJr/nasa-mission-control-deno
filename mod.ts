@@ -21,7 +21,7 @@ await log.setup({
 app.use(async (ctx, next) => {
   await next();
   const time = ctx.response.headers.get('X-Response-Time');
-  console.log(`${ctx.request.method} ${ctx.request.url}: ${time}`);
+  log.info(`${ctx.request.method} ${ctx.request.url}: ${time}`);
 });
 
 app.use(async (ctx, next) => {
@@ -50,6 +50,9 @@ app.use(async (ctx) => {
 });
 
 if (import.meta.main) {
+  log.info(
+    `🦄 Flying high on port ${PORT}. ポート${PORT}で🦕Denoサーバーを起動しています。`
+  );
   await app.listen({
     port: PORT,
   });
