@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN mv src/public .; mv src/data .
+
 USER deno
 
 CMD [ "run",  "--allow-net", "--allow-read", "src/mod.ts"]
