@@ -2,15 +2,15 @@
 
 <h2 align="center">Schedule a new mission</h2>
 
-![13cd5114aaec59a065e06b0b58aee792.png](:/2934ead418ea48c7b32184481fb3e02f)
+![schedule](https://user-images.githubusercontent.com/19915910/132090232-95c841c7-4d34-4646-92f2-7467a61e7f28.png)
 
 <h2 align="center">View upcoming launches</h2>
 
-![efa02a243f4865e314f906a5bf41c963.png](:/1e08770cf2a3476dac9e32992ae3f6f2)
+![upcoming](https://user-images.githubusercontent.com/19915910/132090237-3a22142b-8bc7-4a22-bb5b-99cd3f980210.png)
 
 <h2 align="center">View mission history</h2>
 
-![de4192eeb854b863c940fdba9a698dac.png](:/ca2401a84223485f9fd4c7cb922880b2)
+![history](https://user-images.githubusercontent.com/19915910/132090239-e5be054a-032d-4cf1-bcb6-221623006d78.png)
 <br>
 
 <p>
