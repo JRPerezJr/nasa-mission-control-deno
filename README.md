@@ -32,6 +32,10 @@
 
 > A Secure Deno Backend for the NASA Mission control application
 
+## 🏗 System Architecture
+
+![DenoArchLayout1](https://user-images.githubusercontent.com/19915910/132100322-82d1d491-9763-4f02-842a-c1ca5d445eec.png)
+
 ## 📐 Prerequisites
 
 - Git
