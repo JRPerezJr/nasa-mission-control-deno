@@ -34,7 +34,7 @@
 
 ## 🏗 System Architecture
 
-![DenoArchLayout1](https://user-images.githubusercontent.com/19915910/132100807-bc2fe42b-fc32-4558-a211-0f58f4259d06.png)
+![DenoArchLayout1](https://user-images.githubusercontent.com/19915910/132101091-8a298b4f-fb99-4edc-9122-b706aad88943.png)
 
 ## 📐 Prerequisites
 
