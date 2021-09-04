@@ -30,7 +30,7 @@
 
 <br>
 
-> A Secure Deno Backend for the NASA Mission control application
+> A Secure Deno Backend for the NASA Mission Control application
 
 ## 📐 Prerequisites
 
