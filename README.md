@@ -1,5 +1,7 @@
 <h1 align="center">🦕 Deno Nasa Mission Control 🚀</h1>
 
+> A Secure Deno Backend for the NASA Mission Control application
+
 <h2 align="center">Schedule a new mission</h2>
 
 ![schedule](https://user-images.githubusercontent.com/19915910/132090232-95c841c7-4d34-4646-92f2-7467a61e7f28.png)
@@ -29,8 +31,6 @@
 </p>
 
 <br>
-
-> A Secure Deno Backend for the NASA Mission Control application
 
 ## 🏗 System Architecture
 
